@@ -1,24 +1,14 @@
 #include "main.h"
 
 /*calling the main.h file which contain function prototype **/
-
-
-
-
-
 /**
+ * main - Entry point
  *
- *  * main - Entry point
+ * Description : program that prints _putchar, followed by a new line.
  *
- *   *
+ * Return: Always 0 (Success)
  *
- *    * Description : program that prints _putchar, followed by a new line.
- *
- *     *
- *
- *      * Return: Always 0 (Success)
- *
- *       */
+ */
 
 
 
