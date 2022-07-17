@@ -22,7 +22,7 @@ char *leet(char *str)
 			{
 				str[counter] = numbers[i];
 				break;
-  		         }
+			}
 		}
 	counter++;
 	}
