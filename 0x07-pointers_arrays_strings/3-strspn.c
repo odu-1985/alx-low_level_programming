@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * _strspn - gets the length of a prefix substring
 * @s:	String to be compared to
@@ -21,4 +20,4 @@ unsigned int _strspn(char *s, char *accept)
 		i++;
 	}
 	return (i);
-}  
+}   
