@@ -1,23 +1,27 @@
 #include "main.h"
-/**
-* _strspn - gets the length of a prefix substring
-* @s:	String to be compared to
-* @accept:	string of bytes to compare from
-* Return:	Number of bytes similar among (2)
-*/
-unsigned int _strspn(char *s, char *accept)
-{
-	unsigned int i, j;
+#include <stdio.h>
 
-	i = 0;
-	while (s[i] != '\0')
+/**
+ * _strpbrk - bytes
+ * @s: pointer to char
+ * @accept: pointer to char
+ * Return: NULL
+ */
+
+char *_strpbrk(char *s, char *accept)
+{
+	int i;
+
+	while (*s)
 	{
-		j = 0;
-		while (accept[j] != '\0' && s[i] != accept[j])
-			j++;
-		if (accept[j] == '\0')
-			return (i);
-		i++;
+		for (i = 0; accept[i]; i++)
+		{
+			if (*s == accept[i])
+			{
+				return (s);
+			}
+		}
+		s++;
 	}
-	return (i);
+	return (NULL);
 }   
